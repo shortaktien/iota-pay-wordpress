@@ -1,15 +1,4 @@
-# iota-pay-wordpress
-
-/*
-Plugin Name: IOTA Pay
-Author: Alexander K.
-Description: Get a donation with a simple Button with IOTA via Firefly.
-Version: 1.06
-Text Domain: https://short-aktien.de
-Author URI: https://short-aktien.de
-Plugin URI:
-License: GPLv2
-*/
+# IOTA Pay for WordPress
 
 This IOTA plugin works on the basis of the IOTA button https://iota-button.org which can be found here.
 
