@@ -1,6 +1,8 @@
 # IOTA Pay for WordPress
 
-This IOTA plugin works on the basis of the IOTA button https://iota-button.org which can be found here.
+![pay with iota](https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_1536/https://short-aktien.de/wp-content/uploads/2021/06/IOTA-Pay-WordPress-PlugIn-1536x865.png)
+
+This IOTA plugin works on the basis of the IOTA button https://iota-button.org which can be found here. If you want to read my [developer diary](https://short-aktien.de/iota-pay-wordpress-plugin-spenden-woocommerce/), you should visit my blog.
 
 This plugin lets you easily insert this button anywhere on your WordPress site. Whether in an article, on a page or as a widget.
 		
