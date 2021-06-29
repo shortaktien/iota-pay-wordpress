@@ -6,8 +6,10 @@ Description: Get a donation with a simple Button with IOTA via Firefly.
 Version: 1.0.8
 Text Domain: https://short-aktien.de
 Author URI: https://short-aktien.de
-Plugin URI:
 License: GPLv2
+Tested up to: 5.7.2
+Stable tag: 1.0.8
+Tags: payment, iota 
 */
 
 function admin_enqueue_styles() {
