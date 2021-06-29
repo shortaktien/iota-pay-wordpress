@@ -3,7 +3,7 @@
 Plugin Name: Pay with IOTA
 Author: Alexander K.
 Description: Get a donation with a simple Button with IOTA via Firefly.
-Version: 1.06
+Version: 1.0.8
 Text Domain: https://short-aktien.de
 Author URI: https://short-aktien.de
 Plugin URI:
@@ -67,11 +67,11 @@ function iotaPaySettingFunc(){
 		</div>
 		
 		
-	<!-- ---------------checkbox for every post - donation---------------- -->
+	<!-- ---------------checkbox for every post - donation---------------- 
 
 	<br><br>Insert Donation Button in every Blogpost?
 
-	<input type="checkbox" name="everyBlogPost" value="Yes" checked="unchecked"> insert';
+	<input type="checkbox" name="everyBlogPost" value="Yes" checked="unchecked"> insert';-->
 
 		
 	<!-- ----------------- Description Text in Settings Menu-------------- -->
