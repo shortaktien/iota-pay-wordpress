@@ -1,0 +1,38 @@
+.iota-button-setting{
+margin: 0px auto;
+width: 50%;
+}
+.iota-button-setting label{
+margin-bottom: 8px;
+margin-top: 8px;
+display: block;
+}
+.iota-button-setting input[type=text]{
+width: 100%;
+font-size: 15px;
+padding: 15px 5px;
+height: 40px;	
+}					
+.iota-button-setting input[type=submit]{
+font-size: 15px;
+padding: 15px 5px;
+margin-top: 10px;
+}		
+.error-message{
+color: #cd2653;
+font-weight:bold;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+.success-message{
+color: #32CD32;
+font-weight:bold;
+margin-top: 5px;
+margin-bottom: 5px;	
+}
+.warning-message{
+color: #ffc107;
+font-weight:bold;
+margin-top: 5px;
+margin-bottom: 5px;	
+}	
