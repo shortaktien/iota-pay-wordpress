@@ -12,11 +12,11 @@ Stable tag: 1.0.8
 Tags: payment, iota 
 */
 
-function admin_enqueue_styles() {
+function iota_pay_admin_enqueue_styles() {
 	wp_enqueue_style( 'admin-iota', plugin_dir_url( __FILE__ ) . 'admin-iota.css', array(), '', 'all' );
 }
 
-add_action( 'admin_enqueue_scripts', 'admin_enqueue_styles');
+add_action( 'admin_enqueue_scripts', 'iota_pay_admin_enqueue_styles');
 
 add_action('admin_menu', 'iotaPayMenuFunc');
 function iotaPayMenuFunc(){
@@ -112,7 +112,7 @@ function iotaPaySettingFunc(){
 
 
 /*------------Pay with IOTA--------------*/
-add_filter('script_loader_src','add_id_to_script',10,2);
+/*add_filter('script_loader_src','add_id_to_script',10,2);
 add_filter('script_loader_src','add_id_to_script1',10,2);
 function add_id_to_script($src, $handle){
     if ($handle == 'iota-button.esm.js') {
@@ -150,9 +150,29 @@ function enqueue_scripts() {
 	wp_enqueue_script( 'iota-button.esm.js', 'https://iota-button.org/build/iota-button.esm.js', array( 'jquery' ),'', false );
 	wp_enqueue_script( 'iota-button.js', 'https//iota-button.org/build/iota-button.js', array( 'jquery' ), '', false );
 }
+*/
 
+function iota_pay_enqueue_scripts() {
 
-add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
+		// echo '<script type="module" src="//iota-button.org/build/iota-button.esm.js"></script>
+		// <script nomodule src="//iota-button.org/build/iota-button.js"></script>';
+		echo wp_get_script_tag(
+		     array(
+		         'id'        => 'iota-button.esm.js',
+		         'type' => 'module',
+		         'src'       => esc_url( 'https://iota-button.org/build/iota-button.esm.js' ),
+		     )
+		 );
+		echo wp_get_script_tag(
+		     array(
+		         'id'        => 'iota-button.js',
+		         'nomodule' => true,
+		         'src'       => esc_url( 'iota-button.org/build/iota-button.js' ),
+		     )
+		 );
+}
+
+add_action( 'wp_enqueue_scripts', 'iota_pay_enqueue_scripts' );
 
 
 add_shortcode('iota', 'iotaPayButtonFunc'); 
