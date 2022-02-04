@@ -7,7 +7,7 @@ Version: 1.0.8
 Text Domain: https://short-aktien.de
 Author URI: https://short-aktien.de
 License: GPLv2
-Tested up to: 5.7.2
+Tested up to: 5.8.1
 Stable tag: 1.0.8
 Tags: payment, iota 
 */
